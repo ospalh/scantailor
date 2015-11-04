@@ -178,6 +178,10 @@ ImageViewBase::ImageViewBase(
 		}
 	}
 #endif
+    // Some color
+    QPalette pal = palette();
+    pal.setColor(backgroundRole(), QColor(255, 210, 220));
+    setPalette(pal);
 
 	setFrameShape(QFrame::NoFrame);
 	viewport()->setFocusPolicy(Qt::WheelFocus);
